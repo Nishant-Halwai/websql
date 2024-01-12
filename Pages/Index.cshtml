@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Display data from Azure SQL</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">productId</th>
+                <th scope="col">productName</th>
+                <th scope="col">price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var product in Model.Products)
+            {
+             <tr>
+                <td>@product.productId</td>
+                <td>@product.productName</td>
+                <td>@product.price</td>
+            </tr>
+
+            }
+           
+        </tbody>
+
+    </table>
+</div>
