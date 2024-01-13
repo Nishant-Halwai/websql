@@ -6,10 +6,10 @@ namespace WebApp7.Service
     public class ProductService
     {
 
-        private string db_source = "server-centralindia.database.windows.net";
+        private string db_source = "serverlinuxsql.database.windows.net";
         private string db_user = "NishantAzure123";
         private string db_password = "AzureGen123@";
-        private string db_database = "db-CentralIndia";
+        private string db_database = "dblinuxsql";
         
 
         private SqlConnection GetConnection()
